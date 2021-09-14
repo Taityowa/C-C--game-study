@@ -1,0 +1,27 @@
+/*
+　　関数put_cuontを呼び出した回数を表示します。
+*/
+
+#include<stdio.h>
+
+int i;
+
+void put_count()
+{
+    i++;
+}
+
+int main(void)
+{
+    int x, y;
+
+    printf("関数を呼びだす回数を表示してください：");
+    scanf("%d", &x);
+
+    for(y = 0; y < x; y++){
+        printf("put_count:%d回目\n", i);
+        put_count();
+    }
+
+    return 0;
+}
